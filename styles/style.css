@@ -1,0 +1,114 @@
+.resizable-border {
+  position: absolute;
+  z-index: 1000; }
+
+.resizable-border-top {
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: url(../images/border-h.gif) center center repeat-x;
+  cursor: n-resize; }
+
+.resizable-border-right {
+  top: 0;
+  right: -2px;
+  width: 5px;
+  height: 100%;
+  background: url(../images/border-v.gif) center center repeat-y;
+  cursor: e-resize; }
+
+.resizable-border-bottom {
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: url(../images/border-h.gif) center center repeat-x;
+  cursor: s-resize; }
+
+.resizable-border-left {
+  top: 0;
+  left: -2px;
+  width: 5px;
+  height: 100%;
+  background: url(../images/border-v.gif) center center repeat-y;
+  cursor: w-resize; }
+
+.resizable-border-top-left {
+  top: -3px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: nw-resize; }
+
+.resizable-border-top-right {
+  top: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: ne-resize; }
+
+.resizable-border-bottom-left {
+  bottom: -3px;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: sw-resize; }
+
+.resizable-border-bottom-right {
+  bottom: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border: 1px solid black;
+  opacity: 0.5;
+  cursor: se-resize; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Georgia, serif; }
+
+.drop-target {
+  cursor: pointer;
+  height: 450px;
+  width: 800px;
+  margin: 128px auto;
+  background: #eeeeee;
+  overflow: hidden;
+  position: relative; }
+  .drop-target.dragover {
+    border: 1px dashed #aaaaaa; }
+  .drop-target img {
+    position: absolute; }
+  .drop-target ol {
+    font-size: 32px;
+    line-height: 40px;
+    height: 160px;
+    list-style: inside decimal none;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+.draggable {
+  cursor: move;
+  position: absolute;
+  z-index: 999; }
+  .draggable img {
+    opacity: 0.25; }
