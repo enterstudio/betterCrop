@@ -1,0 +1,41 @@
+@import "resizable.sass"
+
+* 
+	margin: 0
+	padding: 0
+
+body
+	font-family: Georgia, serif
+
+.drop-target
+	cursor: pointer
+	height: 450px
+	width: 800px
+	margin: 128px auto	
+	background: #eee
+	overflow: hidden
+	position: relative
+	&.dragover
+		border: 1px dashed #aaa
+	img
+		position: absolute
+	ol
+		font-size: 32px
+		line-height: 40px
+		height: 160px
+		list-style: inside decimal none
+		text-align: center
+		margin: auto
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		
+
+.draggable
+	cursor: move
+	position: absolute
+	z-index: 999
+	img
+		opacity: 0.25
